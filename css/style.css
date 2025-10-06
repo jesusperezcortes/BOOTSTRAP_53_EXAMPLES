@@ -1,0 +1,21 @@
+body {
+    background-color: rgb(174, 174, 255);
+}
+
+.demo-col {
+    padding: 20px;
+    background-color: #e9ecef;
+    border: 1px solid #dee2e6;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.section {
+    margin: 40px 0;
+}
+.section-title {
+    background-color: #0d6efd;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}

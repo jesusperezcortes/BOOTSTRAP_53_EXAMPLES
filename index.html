@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bootstrap 5.3 Grid Demo</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="bg-dark text-white py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1>Bootstrap 5.3 Grid System</h1>
+                        <p class="fs-5">Ejemplos prácticos del sistema de grid</p>
+                        <!-- Documentacion oficial Bootstrap 5.3 -->
+                        <a
+                            href="https://getbootstrap.com/docs/5.3/layout/grid/"
+                            class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            target="_blank"
+                            >Documentación Oficial Bootstrap 5.3</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Centrar todo el contenido -->
+        <main class="container my-5">
+            <!-- Ejemplo 1: Columnas Iguales -->
+            <div class="container section">
+                <h2 class="section-title">1. Columnas de Ancho Igual</h2>
+                <div class="row">
+                    <div class="col">
+                        <div class="demo-col">col</div>
+                    </div>
+                    <div class="col">
+                        <div class="demo-col">col</div>
+                    </div>
+                    <div class="col">
+                        <div class="demo-col">col</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ejemplo 2: Columnas con Ancho Específico -->
+            <div class="container section">
+                <h2 class="section-title">2. Columnas con Ancho Específico</h2>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="demo-col">col-3</div>
+                    </div>
+                    <div class="col-6">
+                        <div class="demo-col">col-6</div>
+                    </div>
+                    <div class="col-3">
+                        <div class="demo-col">col-3</div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-4">
+                        <div class="demo-col">col-4</div>
+                    </div>
+                    <div class="col-8">
+                        <div class="demo-col">col-8</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ejemplo 3: Grid Responsivo -->
+            <div class="container section">
+                <h2 class="section-title">3. Grid Responsivo</h2>
+                <p class="text-muted">Redimensiona la ventana para ver los cambios</p>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="demo-col">
+                            <strong>Móvil:</strong> 100%<br />
+                            <strong>Tablet:</strong> 50%<br />
+                            <strong>Desktop:</strong> 25%
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="demo-col">
+                            <strong>Móvil:</strong> 100%<br />
+                            <strong>Tablet:</strong> 50%<br />
+                            <strong>Desktop:</strong> 25%
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="demo-col">
+                            <strong>Móvil:</strong> 100%<br />
+                            <strong>Tablet:</strong> 50%<br />
+                            <strong>Desktop:</strong> 25%
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="demo-col">
+                            <strong>Móvil:</strong> 100%<br />
+                            <strong>Tablet:</strong> 50%<br />
+                            <strong>Desktop:</strong> 25%
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ejemplo 4: Layout Sidebar -->
+            <div class="container section">
+                <h2 class="section-title">4. Layout con Sidebar</h2>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="demo-col" style="min-height: 200px">
+                            <strong>Sidebar</strong><br />
+                            Menú de navegación
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="demo-col" style="min-height: 200px">
+                            <strong>Contenido Principal</strong><br />
+                            Aquí va el contenido de la página
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ejemplo 5: Offset -->
+            <div class="container section">
+                <h2 class="section-title">5. Columnas con Offset (Desplazamiento)</h2>
+                <div class="row">
+                    <div class="col-md-4 offset-md-4">
+                        <div class="demo-col">col-md-4 offset-md-4<br />(Centrado)</div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-3 offset-md-3">
+                        <div class="demo-col">col-md-3 offset-md-3</div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="demo-col">col-md-3</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ejemplo 6: Gutters -->
+            <div class="container section">
+                <h2 class="section-title">6. Gutters (Espaciado)</h2>
+
+                <h5>Sin gutters (g-0)</h5>
+                <div class="row g-0 mb-3">
+                    <div class="col-4"><div class="demo-col">col-4</div></div>
+                    <div class="col-4"><div class="demo-col">col-4</div></div>
+                    <div class="col-4"><div class="demo-col">col-4</div></div>
+                </div>
+
+                <h5>Con gutters grandes (g-5)</h5>
+                <div class="row g-5">
+                    <div class="col-4"><div class="demo-col">col-4</div></div>
+                    <div class="col-4"><div class="demo-col">col-4</div></div>
+                    <div class="col-4"><div class="demo-col">col-4</div></div>
+                </div>
+            </div>
+
+            <!-- Ejemplo 7: Alineación -->
+            <div class="container section">
+                <h2 class="section-title">7. Alineación Vertical</h2>
+                <div class="row align-items-start" style="height: 150px; background-color: #f8f9fa">
+                    <div class="col"><div class="demo-col">align-items-start</div></div>
+                </div>
+                <div
+                    class="row align-items-center mt-3"
+                    style="height: 150px; background-color: #f8f9fa">
+                    <div class="col"><div class="demo-col">align-items-center</div></div>
+                </div>
+                <div
+                    class="row align-items-end mt-3"
+                    style="height: 150px; background-color: #f8f9fa">
+                    <div class="col"><div class="demo-col">align-items-end</div></div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Ejemplo 8: Container Types -->
+        <div class="section" style="background-color: #f1f3f5; padding: 40px 0">
+            <h2 class="section-title text-center">8. Tipos de Contenedores</h2>
+
+            <div class="container mb-3">
+                <div class="demo-col">.container (ancho fijo responsivo)</div>
+            </div>
+
+            <div class="container-fluid mb-3">
+                <div class="demo-col">.container-fluid (ancho completo 100%)</div>
+            </div>
+
+            <div class="container-md">
+                <div class="demo-col">.container-md (fluid en móvil, fijo desde md)</div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white text-center py-4 mt-5">
+            <div class="container">
+                <p class="mb-0">Bootstrap 5.3 Grid System - Tutorial Interactivo</p>
+                <p class="mb-0">Adrián Cano - 2025 - adrian.cano@udit.es</p>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
